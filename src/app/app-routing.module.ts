@@ -4,6 +4,7 @@ import {PrimoComponenteComponent} from "./components/primo-componente/primo-comp
 import {SecondoComponenteComponent} from "./components/secondo-componente/secondo-componente.component";
 import {TerzoComponenteComponent} from "./components/terzo-componente/terzo-componente.component";
 import { UserListComponent } from './components/user-list/user-list.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -11,14 +12,13 @@ const routes: Routes = [
     component: UserListComponent,
   },
   {
+    path: '',
+    component: AppComponent,
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: 'page_not_found',
-  },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'PrimoComponent',
   },
   {
     path: 'PrimoComponent',
