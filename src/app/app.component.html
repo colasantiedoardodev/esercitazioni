@@ -1,2 +1,8 @@
 <!-- <router-outlet></router-outlet> -->
-<app-task></app-task>
+<div *ngIf="value">
+  <app-task></app-task>
+  <button mat-raised-button color="primary" routerLink="/user-list" (click)="value = !value">User</button>
+</div>
+<div *ngIf="!value">
+  <router-outlet></router-outlet>
+</div>

@@ -9,6 +9,13 @@ import { TerzoComponenteComponent } from './components/terzo-componente/terzo-co
 import { LifecicleComponent } from './components/lifecicle/lifecicle.component';
 import { TsComponent } from './components/ts/ts.component';
 import { TaskComponent } from './components/task/task.component';
+import { MatInputModule } from '@angular/material/input';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +25,18 @@ import { TaskComponent } from './components/task/task.component';
     TerzoComponenteComponent,
     LifecicleComponent,
     TsComponent,
-    TaskComponent
+    TaskComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    AppRoutingModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
